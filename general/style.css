@@ -11,4 +11,22 @@
     background-repeat: no-repeat;
     background-image:url("http://via.placeholder.com/800x650");
 }
-
+div.feature h2{
+    text-align:center;
+}
+div.feature img{
+    display:block;
+    margin:auto;
+}
+div.price{
+    border: 1px solid black;
+    margin-right: 15px;
+    text-align: center;
+    padding:1em 3em;
+}
+.price-figure{
+    font-size: 2em;
+}
+.price h5{
+    margin-bottom: 1em;
+}
