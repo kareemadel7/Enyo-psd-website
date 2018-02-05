@@ -1,30 +1,113 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: 'Open Sans',sans-serif;
+}
 /*-------Navigation--------*/
 #navbarNavAltMarkup{
     justify-content: flex-end;
 }
 /*-------Header--------*/
+.uppercase{
+    text-transform: uppercase;
+}
 .banner-img{
     width:100%;
     height: 35em;
+    background:linear-gradient(180deg, #0292dc 0%, #ffffff 100%), #0292dc;
+    background-image:url("C:/Users/dell-c/Desktop/Enyo-psd-website/img/sky.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:url("http://via.placeholder.com/800x650");
 }
-        /*contacts div*/
+div#container{
+    text-align: center;
+    padding-top: 4em;
+    color: white;
+}
+div#container p{
+    width:100%;
+    max-width:550px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #bbd8ff;
+    line-height: 150%;
+}
+div#container h2{
+    font-family:  sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+div#container button{
+    display: block;
+    margin: 65px auto;
+    padding: 0.75em 1.5em;
+}
+.enyo-button{
+    border-radius: 30px;
+    background-color: #25365d;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+    border:0;
+}
+div#container button i{
+    margin-right: 20px;
+    font-weight: light;
+    color:#7f97be;
+}
+             /*downloadit div*/
+.download-container{
+    padding:2em 3em 5em;
+}
+.before-img{
+    padding-bottom: 5px;
+}
+ .container ul{
+    list-style-type: none;
+    padding: 0;
+}
+.container ul i{
+    margin-right:22px;
+}
+.download-container button{
+    display: block;
+    margin-left: 0.5em;
+    padding: 0.75em 3em;
+}
+.media{
+    padding-bottom: 75px;
+}
+        /*features div*/
 div.feature h2{
     text-align:center;
+    font-weight: bold;
+    padding-bottom:0;
+    margin:0;
 }
 div.feature img{
     display:block;
-    margin:auto;
+    margin:0 auto;
+    padding-bottom:4em;
 }
+               /*plans div*/
+ div.plans{
+     padding:7em 0 3em 0;
+ }
+ div#plans-container{
+     background-color: #F7F9FB;
+     padding-bottom:3em;
+ }
         /*price div*/
 div.price{
-    border: 1px solid black;
-    margin:15px 15px 0px 0px;
+    border: 1px solid transparent;
+    margin:15px 8px 0px 8px;
     text-align: center;
     padding:1em 3em;
+    background-color: white;
 }
 .price-figure{
     font-size: 2em;
@@ -32,9 +115,16 @@ div.price{
 .price h5{
     margin-bottom: 1.5em;
 }
+
         /*contacts div*/
 div.plans,div.contact-info{
     text-align:center;
+}
+div.contact-info{
+    padding:3em 0 0 ;
+}
+div.contact-info h3{
+    margin:1em 0;
 }
 div.plans p{
     margin:0;
@@ -44,6 +134,7 @@ div.contact-items h6{
     margin-right: 50px;
 }
 div.contact-items i{
+    margin-top: 3em;
     margin-right:10px;
 }
 div.contact-info p{
@@ -52,15 +143,27 @@ div.contact-info p{
             /*download div*/
 div.download{
     text-align:center;
+    padding:3em 0; 
 }
 div.download p{
-    margin:0;
+    width: 100%;
+    max-width:1000px;
+    margin: 0 auto;
+    
+}
+div.download h2{
+    margin-bottom: 1em;
+}
+div.download button{
+    margin: 2em auto;
+    display: block;
+     padding: 0.75em 1.5em;
 }
 .footer-img{
     width:100%;
-    height: 25em;
+    height:25em;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:url("http://via.placeholder.com/800x300");
+    background-image:url("C:/Users/dell-c/Desktop/Enyo-psd-website/img/mountain.jpg");
 }
