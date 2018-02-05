@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="general/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="general/style.css">
     
@@ -18,28 +19,32 @@
                             <!--.....background.....-->
 
                              <!--......navbar.....-->
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <a class="navbar-brand" href="#">ENYO</a>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <a class="navbar-brand" href="#"><i class="fas fa-caret-left"></i>ENYO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Downloads</a>
-                    <a class="nav-item nav-link" href="#">Plans</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#home">Home</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#features">Features</a>
+                    <a class="nav-item nav-link" href="#plans-container">Plans</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                    <a class="nav-item nav-link" href="#download">Download</a>
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target="#search" href="#"><i class="fas fa-search"></i></a>
+                    <input id="search" class="nav-item collapse" placeholder="search...">
                 </div>
             </div>
         </nav>
                             <!--......first div.....-->
-<div id="container" class="banner-img">
-        <h2 class="uppercase">free psd web template</h2>
+<div id="home" class="banner-img">
+        <h1 class="uppercase">free psd web template</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         <button class="enyo-button"><i class="fa fa-download"></i>Download</button>
     </div>
                             <!--......download.....-->
-        <div class="container download-container">
+        <div id="about" class="container download-container">
                 <div class="row">
                         <div class="col-12 d-md-none">
                                 <img class="img-fluid before-img" src="img/Macbook.png">
@@ -60,7 +65,8 @@
                 </div>
     </div>
                             <!--......footer of second page.....-->
-    <div class="container media-container">
+      <div id="media-container">
+    <div class="container">
             <div class="row">
                 
               <div class="col-12 col-sm-6 col-md-4">
@@ -125,15 +131,16 @@
 
             </div>
           </div>
+      </div>
                         <!--......feature page.....-->
-          <div  class="feature">
-                <h2 class="uppercase">check our feature</h2>
-                <img class="img-fluid" src="img/features.png">
+          <div id="features" class="feature">
+                <h1 class="uppercase">check our feature</h1>
+                <img class="img-fluid" src="img/feature.png">
             </div>
                                  <!--....plans div....-->
       <div id="plans-container">
             <div class="plans">
-                  <h2 class="uppercase">PLANS</h2>
+                  <h1 class="uppercase">PLANS</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p><p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
              </div>
                          <!--......price footer.....-->
@@ -141,17 +148,17 @@
                     <div class="row justify-content-center no-gutters">
                       <div class="col-12 col-md-3 price">
                         <h5>BASIC PLAN</h5>
-                        <h5>$<strong class="price-figure">25</strong>/mon</h5>
+                        <h5><span>$</span><strong class="price-figure">25</strong>/mon</h5>
                         <p>Lorem ipsum dolor sit</p>
                       </div>
                       <div class="col-12 col-md-3 price">
                             <h5>professional plan</h5>
-                            <h5>$<strong class="price-figure">50</strong>/mon</h5>
+                            <h5><span>$</span><strong class="price-figure">50</strong>/mon</h5>
                             <p>Lorem ipsum dolor sit</p>
                       </div>
                       <div class="col-12 col-md-3 price">
                             <h5>professional+plan</h5>
-                            <h5>$<strong class="price-figure">75</strong>/mon</h5>
+                            <h5><span>$</span><strong class="price-figure">75</strong>/mon</h5>
                             <p>Lorem ipsum dolor sit</p>
                       </div>
                     </div>
@@ -159,9 +166,9 @@
             
                
                                          <!--....contacts div....-->
-              <div class="contact-info">
+              <div id="contact" class="contact-info">
                     <img class="img-fluid"src="img/call.png">
-                  <h3 class="uppercase">got questions?</h3>
+                  <h5 class="uppercase">got questions?</h5>
                   <p>Contact our customer support team if You have any further questions.</p>
                        <p> We are here to help You out!</p>
                     <div class="contact-items">
@@ -171,8 +178,8 @@
               </div>
             </div>
                                      <!--....download div....-->
-            <div class="download">
-                  <h2 class="uppercase">download this template for free</h2>
+            <div id="download" class="download">
+                  <h1 class="uppercase">download this template for free</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                   <button class="enyo-button"><i class="fa fa-download"></i>Download</button>
             </div>

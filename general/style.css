@@ -2,12 +2,28 @@ html{
     height: 100%;
 }
 body{
+    padding-top:3em;
     height: 100%;
     font-family: 'Open Sans',sans-serif;
 }
 /*-------Navigation--------*/
+.navbar{
+    background-color: #038AD3;
+    
+}
 #navbarNavAltMarkup{
     justify-content: flex-end;
+    
+}
+.navbar-brand , .nav-link{
+    color:white;
+}
+.fa-caret-left{
+    color:red;
+}
+input.collapse{
+    height: 80%;
+
 }
 /*-------Header--------*/
 .uppercase{
@@ -21,25 +37,26 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-div#container{
+div#home{
     text-align: center;
     padding-top: 4em;
     color: white;
 }
-div#container p{
+div#home p{
     width:100%;
     max-width:550px;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
     color: #bbd8ff;
     line-height: 150%;
+    opacity:0.9;
+    font-weight: 300;
 }
-div#container h2{
-    font-family:  sans-serif;
-    font-weight: 700;
+div#home h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
     letter-spacing: 5px;
 }
-div#container button{
+div#home button{
     display: block;
     margin: 65px auto;
     padding: 0.75em 1.5em;
@@ -52,25 +69,38 @@ div#container button{
     font-weight: bold;
     font-size: 80%;
     border:0;
+    cursor: pointer;
 }
 div#container button i{
-    margin-right: 20px;
+    margin-right: 15px;
     font-weight: light;
     color:#7f97be;
 }
              /*downloadit div*/
 .download-container{
     padding:2em 3em 5em;
+    font-weight: 300;
+}
+.download-container h2{
+    font-family: 'Oswald', sans-serif;
+    color:#25365d;
+    font-weight: 900;
 }
 .before-img{
     padding-bottom: 5px;
 }
+.container p{
+    color:#5a5a5a;
+    font-weight: 400;
+}
  .container ul{
     list-style-type: none;
     padding: 0;
+    color:#a7bad3;
 }
 .container ul i{
     margin-right:22px;
+    color:#ff5386;
 }
 .download-container button{
     display: block;
@@ -80,25 +110,51 @@ div#container button i{
 .media{
     padding-bottom: 75px;
 }
+.media p{
+    color:#a7bad3;
+}
+.media h5{
+    color:#25365d;
+    font-weight: 650;
+}
+#media-container{
+    background-color: #f7f9fb;
+    padding-top: 5em;
+}
         /*features div*/
-div.feature h2{
+div.feature h1{
+    font-family: 'Oswald', sans-serif;
     text-align:center;
-    font-weight: bold;
-    padding-bottom:0;
+    font-weight: 600;
+    padding-bottom:2em;
+    padding-top: 2em;
     margin:0;
+    color:#25365d;
 }
 div.feature img{
+    max-width:60%;
     display:block;
     margin:0 auto;
     padding-bottom:4em;
 }
+
                /*plans div*/
  div.plans{
-     padding:7em 0 3em 0;
+     padding:5em 0 3em 0;
  }
  div#plans-container{
-     background-color: #F7F9FB;
+     background-color: #f7f9fb;
      padding-bottom:3em;
+ }
+ div#plans-container h1{
+    font-family: 'Oswald', sans-serif;
+    color:#25365d;
+    font-weight:600;
+    padding-bottom: 0.5em;
+ }
+ div#plans-container p{
+    color:#636363;
+    font-size: 85%;    
  }
         /*price div*/
 div.price{
@@ -106,15 +162,22 @@ div.price{
     margin:15px 8px 0px 8px;
     text-align: center;
     padding:1em 3em;
-    background-color: white;
+    background-color: white; 
+    box-shadow: 3px 3px 10px #eaedf1;
 }
 .price-figure{
     font-size: 2em;
+    color:#25365d;
+    font-weight:700;
 }
 .price h5{
     margin-bottom: 1.5em;
 }
-
+.price h5 span{
+    color:#25365d;
+    font-weight:700;
+    font-size:140%;
+}
         /*contacts div*/
 div.plans,div.contact-info{
     text-align:center;
@@ -122,15 +185,19 @@ div.plans,div.contact-info{
 div.contact-info{
     padding:3em 0 0 ;
 }
-div.contact-info h3{
+div.contact-info h5{
     margin:1em 0;
+    color:#25365d;
 }
 div.plans p{
     margin:0;
+    color:#636363;
 }
 div.contact-items h6{
     display:inline-block;
     margin-right: 50px;
+    color:#25365d;
+    font-weight: 700;
 }
 div.contact-items i{
     margin-top: 3em;
@@ -138,6 +205,7 @@ div.contact-items i{
 }
 div.contact-info p{
     margin:0;
+    font-size: 90%;
 }
             /*download div*/
 div.download{
@@ -148,15 +216,23 @@ div.download p{
     width: 100%;
     max-width:1000px;
     margin: 0 auto;
-    
+    font-size:85%;
 }
-div.download h2{
+div.download h1{
     margin-bottom: 1em;
+    font-family: 'Oswald', sans-serif;
+    color:#25365d;
+    font-weight: 600;
 }
 div.download button{
     margin: 2em auto;
     display: block;
      padding: 0.75em 1.5em;
+}
+div.download button i{
+    margin-right: 15px;
+    font-weight: light;
+    color:#7f97be;
 }
 .footer-img{
     width:100%;
