@@ -16,7 +16,6 @@ body{
 .banner-img{
     width:100%;
     height: 35em;
-    background:linear-gradient(180deg, #0292dc 0%, #ffffff 100%), #0292dc;
     background-image:url("C:/Users/dell-c/Desktop/Enyo-psd-website/img/sky.jpg");
     background-position: center;
     background-size: cover;
